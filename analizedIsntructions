@@ -1,0 +1,299 @@
+"analyzedInstructions": [
+				{
+					"name": "",
+					"steps": [
+						{
+							"number": 1,
+							"step": "Preheat oven to 300 degrees.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							]
+						},
+						{
+							"number": 2,
+							"step": "Combine gingersnaps and melted butter in a Ninja Blender or food processor and run until gingersnaps are crumbly. Press mixture firmly into the bottom of two 6 Springform pans coated with cooking spray.",
+							"ingredients": [
+								{
+									"id": 4679,
+									"name": "cooking spray",
+									"localizedName": "cooking spray",
+									"image": "cooking-spray.png"
+								},
+								{
+									"id": 18172,
+									"name": "gingersnap cookies",
+									"localizedName": "gingersnap cookies",
+									"image": "gingersnaps.png"
+								},
+								{
+									"id": 1001,
+									"name": "butter",
+									"localizedName": "butter",
+									"image": "butter-sliced.jpg"
+								}
+							],
+							"equipment": [
+								{
+									"id": 404650,
+									"name": "springform pan",
+									"localizedName": "springform pan",
+									"image": "cake-pan.png"
+								},
+								{
+									"id": 404771,
+									"name": "food processor",
+									"localizedName": "food processor",
+									"image": "food-processor.png"
+								},
+								{
+									"id": 404726,
+									"name": "blender",
+									"localizedName": "blender",
+									"image": "blender.png"
+								}
+							]
+						},
+						{
+							"number": 3,
+							"step": "Bake for 15 minutes; cool on a wire rack.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 405900,
+									"name": "wire rack",
+									"localizedName": "wire rack",
+									"image": "wire-rack.jpg"
+								},
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							],
+							"length": {
+								"number": 15,
+								"unit": "minutes"
+							}
+						},
+						{
+							"number": 4,
+							"step": "To prepare the filling, using an electric mixer, beat the cream cheese until smooth.",
+							"ingredients": [
+								{
+									"id": 1017,
+									"name": "cream cheese",
+									"localizedName": "cream cheese",
+									"image": "cream-cheese.jpg"
+								}
+							],
+							"equipment": [
+								{
+									"id": 404628,
+									"name": "hand mixer",
+									"localizedName": "hand mixer",
+									"image": "hand-mixer.png"
+								}
+							]
+						},
+						{
+							"number": 5,
+							"step": "Add the sugar then the salt. Beat in the eggs, 1 at a time. Next add the sour cream, lemon juice and zest. Beat until thoroughly mixed. (Make sure you get the cream cheese mixed in from the bottom of the mixing bowl.)",
+							"ingredients": [
+								{
+									"id": 1017,
+									"name": "cream cheese",
+									"localizedName": "cream cheese",
+									"image": "cream-cheese.jpg"
+								},
+								{
+									"id": 9152,
+									"name": "lemon juice",
+									"localizedName": "lemon juice",
+									"image": "lemon-juice.jpg"
+								},
+								{
+									"id": 1056,
+									"name": "sour cream",
+									"localizedName": "sour cream",
+									"image": "sour-cream.jpg"
+								},
+								{
+									"id": 19335,
+									"name": "sugar",
+									"localizedName": "sugar",
+									"image": "sugar-in-bowl.png"
+								},
+								{
+									"id": 1123,
+									"name": "egg",
+									"localizedName": "egg",
+									"image": "egg.png"
+								},
+								{
+									"id": 2047,
+									"name": "salt",
+									"localizedName": "salt",
+									"image": "salt.jpg"
+								}
+							],
+							"equipment": [
+								{
+									"id": 405907,
+									"name": "mixing bowl",
+									"localizedName": "mixing bowl",
+									"image": "mixing-bowl.jpg"
+								}
+							]
+						},
+						{
+							"number": 6,
+							"step": "Pour the filling into the two Springform pans. Do not fill to the very top as the mixture expands a little bit. If you have a small amount of mixture left over just bake it in a small baking dish.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404650,
+									"name": "springform pan",
+									"localizedName": "springform pan",
+									"image": "cake-pan.png"
+								},
+								{
+									"id": 404646,
+									"name": "baking pan",
+									"localizedName": "baking pan",
+									"image": "roasting-pan.jpg"
+								},
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							]
+						},
+						{
+							"number": 7,
+							"step": "Fill an 11x13 (approx.) with water on a lower rack in the oven. On the middle rack, above the water pan, place the two Springform pans.",
+							"ingredients": [
+								{
+									"id": 14412,
+									"name": "water",
+									"localizedName": "water",
+									"image": "water.png"
+								}
+							],
+							"equipment": [
+								{
+									"id": 404650,
+									"name": "springform pan",
+									"localizedName": "springform pan",
+									"image": "cake-pan.png"
+								},
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							]
+						},
+						{
+							"number": 8,
+							"step": "Place in 300* oven for 1 hour and 10 minutes. After 35 minutes, reverse the position of the two pans if they are in two different areas of the oven, such as one in front of the other.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							],
+							"length": {
+								"number": 105,
+								"unit": "minutes"
+							}
+						},
+						{
+							"number": 9,
+							"step": "Turn the oven off and leave the cheesecakes in the oven for another hour.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							]
+						},
+						{
+							"number": 10,
+							"step": "Remove from oven and cool to room temperature on a wire rack.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 405900,
+									"name": "wire rack",
+									"localizedName": "wire rack",
+									"image": "wire-rack.jpg"
+								},
+								{
+									"id": 404784,
+									"name": "oven",
+									"localizedName": "oven",
+									"image": "oven.jpg"
+								}
+							]
+						},
+						{
+							"number": 11,
+							"step": "When cheesecakes are at room temperature, place them in the refrigerator for 8 hours or overnight.",
+							"ingredients": [],
+							"equipment": [],
+							"length": {
+								"number": 480,
+								"unit": "minutes"
+							}
+						},
+						{
+							"number": 12,
+							"step": "Before removing from pan, use a knife to cut around the pan sides. Then open the clasp on the Springform and release the cheesecake.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404745,
+									"name": "knife",
+									"localizedName": "knife",
+									"image": "chefs-knife.jpg"
+								},
+								{
+									"id": 404645,
+									"name": "frying pan",
+									"localizedName": "frying pan",
+									"image": "pan.png"
+								}
+							]
+						},
+						{
+							"number": 13,
+							"step": "Place it on a serving plate with the bottom of the Springform pan underneath.",
+							"ingredients": [],
+							"equipment": [
+								{
+									"id": 404650,
+									"name": "springform pan",
+									"localizedName": "springform pan",
+									"image": "cake-pan.png"
+								}
+							]
+						}
+					]
+				}
+			],

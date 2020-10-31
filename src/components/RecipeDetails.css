@@ -1,0 +1,111 @@
+.showRecipeContainer {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: calc(100vh - 100%);
+  min-height: calc(100vh - 50px);
+}
+.showRecipe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  margin: auto;
+  animation: zoomIn 0.5s ease-in-out;
+  background-color: #fff;
+  padding: 0.2em;
+}
+.closeButton {
+  position: sticky;
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateY(-4em);
+  right: 0.4em;
+  top: 4em;
+  width: 2em;
+  z-index: 30;
+}
+.showRecipeTitle {
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-size: xx-large;
+}
+.contentContainer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.showRecipeImage {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.showRecipeImage img {
+  object-fit: fill;
+}
+
+.recipeSummary,
+.recipeInstructions {
+  width: 100%;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.recipeInstructions li,
+.recipeSummary li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.ingredients {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  overflow-x: auto;
+  border-radius: 1em;
+  scroll-behavior: smooth;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ingredientCard {
+  height: 180px;
+}
+.ingredientCard img {
+  height: 100px;
+  width: 100px;
+  object-fit: none;
+}
+.ingredientCard p {
+  max-width: 100px;
+  height: 50px;
+  overflow: hidden;
+}
+.ingredientCard .measure {
+  max-width: 100px;
+  height: 25px;
+  overflow: hidden;
+}
+
+/* .showRecipe::-webkit-scrollbar {
+  display: none;
+} */
+
+@keyframes zoomIn {
+  0% {
+    width: 0;
+    height: 0;
+    margin: auto;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}

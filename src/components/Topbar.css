@@ -1,0 +1,178 @@
+.container,
+.containerHor,
+.containerVer {
+  background-image: url("../assets/foods.jpg");
+  height: 500px;
+  position: relative;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.containerHor,
+.containerVer {
+  overflow: visible;
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -100px;
+  width: 110%;
+  height: 200px;
+  background-color: #fff;
+  animation: slideup 0.5s ease-in-out;
+  transform: rotate(-5deg);
+}
+
+.containerHor::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -100px;
+  width: 110%;
+  height: 200px;
+  background-color: #fff;
+  animation: slideHor 0.5s ease-in-out;
+  transform: rotate(0deg);
+}
+body {
+  overflow-x: hidden;
+}
+.containerVer::after {
+  position: absolute;
+  content: "";
+  top: 100px;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 20px;
+  animation: slideVer 1s ease-in-out;
+  transform: rotate(0deg) translateX(-200px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.appicon {
+  animation: appiconmovement 1.5s infinite;
+}
+.headernav {
+  display: flex;
+  /* max-width: 800px; */
+  padding: 0 10px;
+  justify-content: space-between;
+  color: #fff;
+  font-size: xx-large;
+  margin: 0 auto;
+  background-color: rgba(185, 124, 124, 0.5);
+}
+.searchInput {
+  display: none;
+}
+
+.searchInputShow {
+  border: 0;
+  border-bottom: 2px solid #b4becb;
+  width: 100%;
+  font-size: 1em;
+  margin: 0 auto;
+  outline: none;
+  border-radius: 20px;
+  padding: 0 20px;
+  display: initial;
+}
+
+.title,
+.nav {
+  height: 50px;
+}
+
+.title {
+  min-width: 200px;
+}
+
+.nav {
+  font-size: x-large;
+}
+
+.transperant {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.nav {
+  display: flex;
+}
+
+.link {
+  text-decoration: none !important;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+.lr {
+  padding: 14px 0;
+}
+
+.nav div {
+  margin: 0 20px;
+}
+
+.nav div:hover {
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
+}
+.title:hover {
+  cursor: pointer;
+}
+
+@keyframes slideup {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes slideHor {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slideVer {
+  0% {
+    transform: rotate(90deg) translateX(500px);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform-origin: bottom left;
+    transform: rotate(-10deg) translateX(-200px);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform-origin: bottom left;
+    transform: rotate(0deg) translateX(-200px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes appiconmovement {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg) translateY(-5px);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}

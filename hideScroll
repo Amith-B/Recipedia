@@ -1,0 +1,3 @@
+.recipeTitle::-webkit-scrollbar {
+  display: none;
+}

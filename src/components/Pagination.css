@@ -1,0 +1,50 @@
+.pagination_section {
+  width: 80%;
+  height: 5em;
+  padding: 2em 1em;
+  overflow-x: scroll;
+  margin: 0 auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.pagination_section div {
+  text-decoration: none;
+  width: 4em;
+  height: 4em;
+  padding: 1em 2em;
+  display: inline;
+  border-radius: 1em;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+/* pagination hover effect on non-active */
+
+.pagination_section div:not(.active) {
+  background-color: white;
+  color: black;
+}
+
+.pagination_section div:hover:not(.active) {
+  background-color: #18688d;
+  color: white;
+}
+/* pagination hover effect on active*/
+
+.active {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* a:nth-child(5) {
+  background-color: green;
+  color: white;
+}
+
+a:nth-child(1) {
+  font-weight: bold;
+}
+
+a:nth-child(7) {
+  font-weight: bold;
+} */
