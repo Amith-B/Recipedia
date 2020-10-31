@@ -1,0 +1,21 @@
+.foodIntroImage {
+  background-image: url("../assets/foodsIntro.jpg");
+  height: 400px;
+  width: 400px;
+  min-height: 300px;
+  min-width: 300px;
+  position: relative;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 250px;
+  margin: 0 auto;
+}
+
+.introContainer {
+  position: absolute;
+  color: white;
+  overflow: visible;
+  margin-top: 100px;
+  z-index: 40;
+}
