@@ -1,7 +1,7 @@
 .showRecipeContainer {
   position: fixed;
   top: 50px;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 100%);
   min-height: calc(100vh - 50px);
 }
@@ -28,9 +28,12 @@
   z-index: 30;
 }
 .showRecipeTitle {
+  width: 100%;
   text-align: left;
   margin-bottom: 0.5em;
-  font-size: xx-large;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 2em;
 }
 .contentContainer {
   position: relative;
