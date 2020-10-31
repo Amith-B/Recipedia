@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import http from "../services/httpService";
 import Card from "./widgets/Card";
-//import fakeData from "../services/random100.json";
+import fakeData from "../services/random100.json";
 import RecipeDetails from "./RecipeDetails";
 import Pagination from "./Pagination";
 import "./Recipe.css";
@@ -20,12 +20,17 @@ function Recipe({
   const [paginateVisible, setPaginateVisible] = useState(false);
 
   const getRandomRecipes = async () => {
-    const response = await http.get(
-      "https://api.spoonacular.com/recipes/random?number=50&apiKey=9f590e2edc584f3b84261fd0ac04ab8a"
-    );
-    setRecipes(response.data["recipes"]);
+    try {
+      const response = await http.get(
+        "https://api.spoonacular.com/recipes/random?number=50&apiKey=9f590e2edc584f3b84261fd0ac04ab8a"
+      );
+      setRecipes(response.data["recipes"]);
+    } catch (error) {
+      setRecipes(fakeData["recipes"]);
+    }
+
     setPaginateVisible(false);
-    //setRecipes(fakeData["recipes"]);
+
     setSearchString("");
   };
 

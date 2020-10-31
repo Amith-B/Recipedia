@@ -178,3 +178,9 @@ body {
     transform: rotate(-10deg);
   }
 }
+
+@media (max-width: 740px) {
+  .headernav {
+    flex-direction: column;
+  }
+}
