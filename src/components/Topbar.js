@@ -6,9 +6,15 @@ import Recipe from "./Recipe";
 import Login from "./Login";
 import Register from "./Register";
 import Home from "./Home";
+import About from "./About";
 
 function Topbar(props) {
-  const clsNames = ["container", "containerHor", "containerVer"];
+  const clsNames = [
+    "container",
+    "containerHor",
+    "containerVer",
+    "containerCircle",
+  ];
   const [cls, setCls] = useState(clsNames[0]);
   const [searchClass, setSearchClass] = useState("searchInput");
   const [searchString, setSearchString] = useState("");
@@ -27,7 +33,15 @@ function Topbar(props) {
                 height="40px"
               />
             </i>
-            Recipedia
+            <Link
+              to="/"
+              style={{
+                transform: "translateY(-5px)",
+              }}
+              className="link"
+            >
+              Recipedia
+            </Link>
           </div>
           <span>
             <input
@@ -50,6 +64,11 @@ function Topbar(props) {
             <div className={"recipes"}>
               <Link to="/recipe" className="link">
                 Recipes
+              </Link>
+            </div>
+            <div className={"recipes"}>
+              <Link to="/about" className="link">
+                About
               </Link>
             </div>
             {/* <div className={"user"}>
@@ -80,7 +99,16 @@ function Topbar(props) {
               />
             )}
           />
-
+          <Route
+            path="/about"
+            render={(props) => (
+              <About
+                {...props}
+                hideSearch={() => setSearchClass("searchInput")}
+                transition={() => setCls(clsNames[3])}
+              />
+            )}
+          />
           <Route
             path="/login"
             render={(props) => (

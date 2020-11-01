@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./Pagination.css";
 
-function Pagination({ pageActive = 0, setPageActive }) {
+function Pagination({ pageActive = 0, setPage }) {
   const paginateRef = useRef();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function Pagination({ pageActive = 0, setPageActive }) {
         <div>5</div> */}
         {[...Array(20).keys()].map((d, i) => (
           <div
-            onClick={() => setPageActive(i)}
+            onClick={() => setPage(i)}
             key={i}
             className={pageActive === i ? "active" : ""}
           >

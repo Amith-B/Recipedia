@@ -1,0 +1,68 @@
+.profile {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 80;
+  margin-top: 100px;
+}
+
+.profileImage {
+  background-image: url("../assets/profile.jpg");
+  height: 400px;
+  width: 400px;
+  min-height: 300px;
+  min-width: 300px;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 250px;
+  margin: 0 auto;
+  animation: slideProfileUp 1s ease-in-out;
+}
+
+.profile p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: rgba(223, 217, 217, 0.514);
+  border-radius: 20px;
+  width: 80%;
+  height: 200px;
+  margin: 2em auto;
+}
+
+@media (max-width: 400px) {
+  .profileImage {
+    height: 300px;
+    width: 300px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 150px;
+  }
+}
+
+@media (max-width: 300px) {
+  .profileImage {
+    height: 200px;
+    width: 200px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 100px;
+  }
+}
+
+@keyframes slideProfileUp {
+  0% {
+    transform: translateY(100vh);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
